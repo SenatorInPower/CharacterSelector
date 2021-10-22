@@ -1,5 +1,5 @@
 # CharacterSelector
-Unity Test
+Unity Test.
 Нужно создать выбор персонажа.
 Сцена CharacterSelector.
 По кнопке Generate должен выбираться и отображаться случайный персонаж из папки Prefabs.
