@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class CharacterSelector
 {
+  
     private const string Path = "Assets/Prefabs/References/Char";
 
-    private static string pathHiro;
+    private  string pathHiro;
 
     private GameObject hiro;
 
@@ -24,15 +25,14 @@ public class CharacterSelector
     {
         if (first || hiroHendler.IsDone)
         {
-            int rendonHiro = UnityEngine.Random.Range(0, 15);
-
+            int rendonHiro = UnityEngine.Random.Range(0, 16);
             pathHiro = $"{Path + rendonHiro }";
 
             ReleaseHiro();
 
             hiroHendler = Addressables.InstantiateAsync(pathHiro);
-
             hiroHendler.Completed += HiroCriation;
+
             first = false;
         }
     }
@@ -51,10 +51,10 @@ public class CharacterSelector
         }
 
     }
-    public void LoadScen()
+    public void LoadScenGame()
     {
         ReleaseHiro();
-
+      
         SceneManager.LoadScene("Game");
         SceneManager.sceneLoaded += delegate { InstHiro(); };
 

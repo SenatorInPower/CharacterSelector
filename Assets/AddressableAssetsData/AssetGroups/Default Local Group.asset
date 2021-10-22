@@ -90,7 +90,7 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: ae7d8b00e1852d94e8652d405171699b
-    m_Address: Assets/Prefabs/References/Cha12
+    m_Address: Assets/Prefabs/References/Char12
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
@@ -108,7 +108,7 @@ MonoBehaviour:
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
   - m_GUID: fef1cf2afab8c8e48b0819ae608ecdcb
-    m_Address: Assets/Prefabs/References/Char16
+    m_Address: Assets/Prefabs/References/Char15
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
