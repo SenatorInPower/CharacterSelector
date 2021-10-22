@@ -5,43 +5,49 @@ using UnityEngine.SceneManagement;
 
 public class CharacterSelector
 {
-    private string pathHiro;
+    private const string Path = "Assets/Prefabs/References/Char";
+
+    private static string pathHiro;
 
     private GameObject hiro;
 
-    private const string path = "Assets/Prefabs/References/Char";
+    private bool first = true;
 
-    bool first=true;
+    private AsyncOperationHandle<GameObject> hiroHendler;
 
-    AsyncOperationHandle<GameObject> hiroHendler;
+
+
+
+
 
     public void LoadHiro()
     {
         if (first || hiroHendler.IsDone)
         {
-            pathHiro = $"{path + UnityEngine.Random.Range(0, 16)}";
+            int rendonHiro = UnityEngine.Random.Range(0, 15);
+
+            pathHiro = $"{Path + rendonHiro }";
 
             ReleaseHiro();
 
             hiroHendler = Addressables.InstantiateAsync(pathHiro);
-            if (first)
-            {
-                hiroHendler.Completed += HiroCriation;
-                first = false;
-            }
+
+            hiroHendler.Completed += HiroCriation;
+            first = false;
         }
     }
 
     private void HiroCriation(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<GameObject> obj)
     {
         hiro = obj.Result;
-        
+
     }
     void ReleaseHiro()
     {
         if (hiro)
         {
-            Addressables.Release(hiro);
+            //  Addressables.Release(hiro);
+            Addressables.Release(hiroHendler);
         }
 
     }
@@ -50,9 +56,13 @@ public class CharacterSelector
         ReleaseHiro();
 
         SceneManager.LoadScene("Game");
-        SceneManager.sceneLoaded += delegate { Addressables.InstantiateAsync(pathHiro); };
-        Addressables.Release(hiroHendler);
+        SceneManager.sceneLoaded += delegate { InstHiro(); };
+
 
     }
-  
+    void InstHiro()
+    {
+        Addressables.InstantiateAsync(pathHiro);
+    }
+
 }
