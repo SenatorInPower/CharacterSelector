@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: c233df1e748487d4ca6486a62643d7e2
+  m_SerializeEntries:
+  - m_GUID: 53a99e5977d74a54b8ec7152551f92af
+    m_Address: Assets/Prefabs/References/Char0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 0c700c05063d08841a543e8006af7d8a
+    m_Address: Assets/Prefabs/References/Char1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8cba555f00519c445a67f37df6a732cf
+    m_Address: Assets/Prefabs/References/Char2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: c4b77ed62153f4b4a8e52a981d88913e
+    m_Address: Assets/Prefabs/References/Char3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: da47f9b5ff160434483d6e33e9c06aba
+    m_Address: Assets/Prefabs/References/Char4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: fbe3882f5a80eec4e94d8e2f0d4e9bf9
+    m_Address: Assets/Prefabs/References/Char5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: abc4602540b9c5245b0c4cf5bfbfa86b
+    m_Address: Assets/Prefabs/References/Char6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2c1329a7c9cbc294098ecdd208a800a8
+    m_Address: Assets/Prefabs/References/Char7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 9770b590bf458494da2ac5a3697c387a
+    m_Address: Assets/Prefabs/References/Char8
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 3415faee9fdf1c446bcf1ef4d62405c5
+    m_Address: Assets/Prefabs/References/Char9
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8bb46685209fef6499b17da41e4a1025
+    m_Address: Assets/Prefabs/References/Char10
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d9647bf3567c4e64b9f12ab297acbc61
+    m_Address: Assets/Prefabs/References/Char11
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ae7d8b00e1852d94e8652d405171699b
+    m_Address: Assets/Prefabs/References/Cha12
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: b6db6d6259535b249878f2637522e7e8
+    m_Address: Assets/Prefabs/References/Char13
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 31fd5c215f0e7274c86269e8c095ffc0
+    m_Address: Assets/Prefabs/References/Char14
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: fef1cf2afab8c8e48b0819ae608ecdcb
+    m_Address: Assets/Prefabs/References/Char16
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: e6c66da4cc7d55048aadf80e01c3cc1e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 5a1244b6ccc2e534289727b1bbdffb2c, type: 2}
+    - {fileID: 11400000, guid: 38e8eb24ad9efe54ab15bf0c57110a19, type: 2}
