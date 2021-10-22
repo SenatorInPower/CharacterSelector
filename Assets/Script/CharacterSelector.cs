@@ -8,7 +8,7 @@ public class CharacterSelector
   
     private const string Path = "Assets/Prefabs/References/Char";
 
-    private  string pathHiro;
+    private static string pathHiro;
 
     private GameObject hiro;
 
