@@ -5,29 +5,37 @@ using UnityEngine.SceneManagement;
 
 public class CharacterSelector
 {
-    private static string pathHiro;
+    private string pathHiro;
 
     private GameObject hiro;
 
-    private string path = "Assets/Prefabs/References/Char";
+    private const string path = "Assets/Prefabs/References/Char";
 
+    bool first=true;
 
+    AsyncOperationHandle<GameObject> hiroHendler;
 
     public void LoadHiro()
     {
-        pathHiro = $"{path + UnityEngine.Random.Range(0, 16)}";
+        if (first || hiroHendler.IsDone)
+        {
+            pathHiro = $"{path + UnityEngine.Random.Range(0, 16)}";
 
-        ReleaseHiro();
-        
-        AsyncOperationHandle<GameObject> hiroHendler = Addressables.InstantiateAsync(pathHiro);
+            ReleaseHiro();
 
-
-        hiroHendler.Completed += HiroCriation;
+            hiroHendler = Addressables.InstantiateAsync(pathHiro);
+            if (first)
+            {
+                hiroHendler.Completed += HiroCriation;
+                first = false;
+            }
+        }
     }
 
     private void HiroCriation(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<GameObject> obj)
     {
         hiro = obj.Result;
+        
     }
     void ReleaseHiro()
     {
@@ -43,7 +51,8 @@ public class CharacterSelector
 
         SceneManager.LoadScene("Game");
         SceneManager.sceneLoaded += delegate { Addressables.InstantiateAsync(pathHiro); };
+        Addressables.Release(hiroHendler);
 
     }
-
+  
 }
