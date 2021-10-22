@@ -10,18 +10,20 @@ public class Load : MonoBehaviour
    
     public Button GenChar;
     public Button LoadLevel;
+    CharacterSelector characterSelector => new CharacterSelector();
     private void OnEnable()
     {
-        GenChar.onClick.AddListener(new CharacterSelector().LoadHiro);
-        LoadLevel.onClick.AddListener(new CharacterSelector().LoadScen);
+        
+        GenChar.onClick.AddListener(characterSelector.LoadHiro);
+        LoadLevel.onClick.AddListener(characterSelector.LoadScen);
     }
 
    
 
     private void OnDisable()
     {
-        GenChar.onClick.RemoveListener(new CharacterSelector().LoadHiro);
-        LoadLevel.onClick.RemoveListener(new CharacterSelector().LoadScen);
+        GenChar.onClick.RemoveListener(characterSelector.LoadHiro);
+        LoadLevel.onClick.RemoveListener(characterSelector.LoadScen);
 
 
     }
